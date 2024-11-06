@@ -43,6 +43,8 @@
                                                 placeholder="Add the caption of your post here"
                                                 id="message-text"></textarea>
                                         </div>
+                                        <i class="fa-solid fa-camera"></i>
+                                        <i class="fa-solid fa-location-dot"></i>
                                     </form>
                                 </div>
                                 <div class="modal-footer">
@@ -54,30 +56,116 @@
                         </div>
                     </div>
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             <i class="fa-solid fa-gear"></i>
                         </button>
                         <ul class="dropdown-menu">
-                          <li><button class="dropdown-item" type="button">Profile</button></li>
-                          <li><button class="dropdown-item" type="button">Accesibility</button></li>
-                          <li><button class="dropdown-item" type="button">Privacy and data</button></li>
-                          <hr>
-                          <li><button class="dropdown-item text-danger" type="button">Log out</button></li>
+                            <li><button class="dropdown-item" type="button">Profile</button></li>
+                            <li><button class="dropdown-item" type="button">Accesibility</button></li>
+                            <li><button class="dropdown-item" type="button">Privacy and data</button></li>
+                            <hr>
+                            <li><button class="dropdown-item text-danger" type="button">Log out</button></li>
                         </ul>
-                      </div>
+                    </div>
                 </form>
             </div>
         </div>
     </nav>
     <hr>
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
+    <!-- botones de contenido-->
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+                    class="fa-solid fa-table-cells"></i></button>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Link</a>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
+                    class="fa-solid fa-square"></i></button>
         </li>
-      </ul>
+    </ul>
+    <!-- contenido -->
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">
+            <div class="container row ms-5 column-gap-4">
+                <div class="card col-4 mt-3" style="width: 18rem;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Jay_Cutler_bodybuilder_2008-crop.jpg/1200px-Jay_Cutler_bodybuilder_2008-crop.jpg"
+                        class="card-img-top" alt="...">
+                </div>
+                <div class="card col-4 mt-3" style="width: 18rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC9b-4athNiTZ8OBwiuY16-wWDCciS6MWzhA&s"
+                        class="card-img-top" alt="...">
+                </div>
+                <div class="card col-4 mt-3" style="width: 18rem;">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/mr-olympia-phil-heath-poses-during-a-media-call-ahead-of-news-photo-1600786730.jpg"
+                        class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="container row ms-5 column-gap-4">
+                <div class="card col-4 mt-3" style="width: 18rem;">
+                    <img src="https://realleader-usa.es/wp-content/uploads/2023/11/Kevin-Levrone.webp"
+                        class="card-img-top" alt="...">
+                </div>
+                <div class="card col-4 mt-3" style="width: 18rem;">
+                    <img src="https://images.ecestaticos.com/YRpnK_zX0rrBFXuHmIbkIEFUDco=/0x0:398x481/624x752/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fd5e%2F31f%2F0b7%2Fd5e31f0b737b1e8b68833228e07b8f87.jpg"
+                        class="card-img-top" alt="...">
+                </div>
+                <div class="card col-4 mt-3" style="width: 18rem;">
+                    <img src="https://i.pinimg.com/564x/37/76/74/377674040fc5c904a9b53f3bb7bf66d4.jpg"
+                        class="card-img-top" alt="...">
+                </div>
+            </div>
+            ...
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...
+            <div class="container column mx-auto p-2" style="width: 300px;">
+                <div class="card mt-3" style="width: 20rem;">
+                    <h2><strong>Jay Cutler</strong></h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Jay_Cutler_bodybuilder_2008-crop.jpg/1200px-Jay_Cutler_bodybuilder_2008-crop.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>204 Likes</strong></h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,
+                            temporibus!.</p>
+                    </div>
+                </div>
+                <div class="card mt-3" style="width: 20rem;">
+                    <h2><strong>Jay Cutler</strong></h2>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC9b-4athNiTZ8OBwiuY16-wWDCciS6MWzhA&s"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>250 Likes</strong></h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,
+                            temporibus!.</p>
+                    </div>
+                </div>
+                <div class="card mt-3" style="width: 20rem;">
+                    <h2><strong>Phil Helth</strong></h2>
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/mr-olympia-phil-heath-poses-during-a-media-call-ahead-of-news-photo-1600786730.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>300 Likes</strong></h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,
+                            temporibus!.</p>
+                    </div>
+                </div>
+                <div class="card mt-3" style="width: 20rem;">
+                    <h2><strong>Levrone</strong></h2>
+                    <img src="https://realleader-usa.es/wp-content/uploads/2023/11/Kevin-Levrone.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>220 Likes</strong></h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,
+                            temporibus!.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
 
